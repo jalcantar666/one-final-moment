@@ -26,12 +26,39 @@
             font-size: 2em;
             color: #333;
         }
+        /* Highlighted Kickstarter button style */
+        .kickstarter-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            background-color: #05ce78;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .kickstarter-link:hover {
+            background-color: #049d5e;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="one-final-moment-1fm-logo-horizontal-full-color-rgb-900px-w-72ppi.png" alt="One Final Moment Logo">
         <h1>Coming Soon!</h1>
+
+        <!-- ✅ BEGIN KICKSTARTER SNIPPET INSERT -->
+        <a 
+            class="kickstarter-link" 
+            href="https://www.kickstarter.com/projects/jba/one-final-moment-a-legacy-video-messaging-app" 
+            target="_blank"
+        >
+            Support us on Kickstarter
+        </a>
+        <!-- ✅ END KICKSTARTER SNIPPET INSERT -->
+
     </div>
 </body>
 </html>
+
