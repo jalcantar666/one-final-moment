@@ -10,15 +10,16 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: hsl(0, 0%, 95%);
-            flex-direction: column;
-            padding: 20px;
         }
         .container {
-            max-width: 600px;
+            max-width: 700px;
+            width: 100%;
+            padding: 20px;
         }
         img {
             max-width: 100%;
@@ -27,11 +28,7 @@
         h1 {
             font-size: 2em;
             color: #333;
-            margin-top: 20px;
-        }
-        .tiktok-embed {
-            margin-top: 30px;
-            width: 100%;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -40,14 +37,23 @@
         <img src="one-final-moment-1fm-logo-horizontal-full-color-rgb-900px-w-72ppi.png" alt="One Final Moment Logo">
         <h1>Coming Soon!</h1>
 
-        <!-- ✅ BEGIN TIKTOK EMBED -->
-        <div class="tiktok-embed" style="max-width: 325px;" data-video-id="7517309168517221646">
-            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@joaquinnmyshoes/video/7517309168517221646" data-video-id="7517309168517221646" style="max-width: 325px;">
-                <section> <a target="_blank" title="@joaquinnmyshoes" href="https://www.tiktok.com/@joaquinnmyshoes">@joaquinnmyshoes</a></section>
+        <!-- ✅ BEGIN TIKTOK VIDEO EMBED -->
+        <div style="max-width: 700px; margin: 0 auto;">
+            <blockquote 
+                class="tiktok-embed" 
+                cite="https://www.tiktok.com/@joaquinnmyshoes/video/7517309168517221646" 
+                data-video-id="7517309168517221646" 
+                style="max-width: 100%; height: 500px;"
+            >
+                <section>
+                    <a target="_blank" title="@joaquinnmyshoes" href="https://www.tiktok.com/@joaquinnmyshoes">@joaquinnmyshoes</a>
+                    <p>One Final Moment official fundraising video</p>
+                    <a target="_blank" title="♬ original sound - Joaquin Alcantar" href="https://www.tiktok.com/music/original-sound-7517309155430418178">♬ original sound - Joaquin Alcantar</a>
+                </section>
             </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
         </div>
-        <script async src="https://www.tiktok.com/embed.js"></script>
-        <!-- ✅ END TIKTOK EMBED -->
+        <!-- ✅ END TIKTOK VIDEO EMBED -->
     </div>
 </body>
 </html>
