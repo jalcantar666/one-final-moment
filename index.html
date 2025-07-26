@@ -14,9 +14,11 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: hsl(0, 0%, 95%);
+            flex-direction: column;
+            padding: 20px;
         }
         .container {
-            max-width: 500px;
+            max-width: 600px;
         }
         img {
             max-width: 100%;
@@ -25,21 +27,11 @@
         h1 {
             font-size: 2em;
             color: #333;
-        }
-        /* Highlighted Kickstarter button style */
-        .kickstarter-link {
-            display: inline-block;
             margin-top: 20px;
-            padding: 12px 24px;
-            font-size: 1rem;
-            background-color: #05ce78;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
         }
-        .kickstarter-link:hover {
-            background-color: #049d5e;
+        .tiktok-embed {
+            margin-top: 30px;
+            width: 100%;
         }
     </style>
 </head>
@@ -48,17 +40,14 @@
         <img src="one-final-moment-1fm-logo-horizontal-full-color-rgb-900px-w-72ppi.png" alt="One Final Moment Logo">
         <h1>Coming Soon!</h1>
 
-        <!-- ✅ BEGIN KICKSTARTER SNIPPET INSERT -->
-        <a 
-            class="kickstarter-link" 
-            href="https://www.kickstarter.com/projects/jba/one-final-moment-a-legacy-video-messaging-app" 
-            target="_blank"
-        >
-            Support us on Kickstarter
-        </a>
-        <!-- ✅ END KICKSTARTER SNIPPET INSERT -->
-
+        <!-- ✅ BEGIN TIKTOK EMBED -->
+        <div class="tiktok-embed" style="max-width: 325px;" data-video-id="7517309168517221646">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@joaquinnmyshoes/video/7517309168517221646" data-video-id="7517309168517221646" style="max-width: 325px;">
+                <section> <a target="_blank" title="@joaquinnmyshoes" href="https://www.tiktok.com/@joaquinnmyshoes">@joaquinnmyshoes</a></section>
+            </blockquote>
+        </div>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+        <!-- ✅ END TIKTOK EMBED -->
     </div>
 </body>
 </html>
-
