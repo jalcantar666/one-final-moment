@@ -18,7 +18,7 @@
     }
 
     .container {
-      max-width: 700px;
+      max-width: 500px;
       width: 100%;
       padding: 20px;
     }
@@ -57,29 +57,31 @@
     <div id="sound-instruction">🔊 Click the Sound</div>
 
     <!-- TikTok Video Embed -->
-    <div style="max-width: 700px; margin: 0 auto;">
-      <blockquote
-        class="tiktok-embed"
-        cite="https://www.tiktok.com/@joaquinnmyshoes/video/7517309168517221646"
-        data-video-id="7517309168517221646"
-        style="max-width: 100%; height: 500px;"
-      >
-        <section>
-          <a target="_blank" title="@joaquinnmyshoes" href="https://www.tiktok.com/@joaquinnmyshoes">@joaquinnmyshoes</a>
-          <p>One Final Moment official fundraising video</p>
-          <a target="_blank" title="♬ original sound - Joaquin Alcantar" href="https://www.tiktok.com/music/original-sound-7517309155430418178">♬ original sound - Joaquin Alcantar</a>
-        </section>
-      </blockquote>
-      <script async src="https://www.tiktok.com/embed.js"></script>
-    </div>
+    <blockquote 
+      class="tiktok-embed" 
+      cite="https://www.tiktok.com/@joaquinnmyshoes/video/7517309168517221646" 
+      data-video-id="7517309168517221646" 
+      style="max-width: 325px; margin: 0 auto;"
+    >
+      <section>
+        <a target="_blank" title="@joaquinnmyshoes" href="https://www.tiktok.com/@joaquinnmyshoes">@joaquinnmyshoes</a>
+        <p>One Final Moment official fundraising video</p>
+        <a target="_blank" title="♬ original sound - Joaquin Alcantar" href="https://www.tiktok.com/music/original-sound-7517309155430418178">♬ original sound - Joaquin Alcantar</a>
+      </section>
+    </blockquote>
+    <script async src="https://www.tiktok.com/embed.js"></script>
   </div>
 
   <script>
     // Auto-hide the sound instruction after 5 seconds
-    setTimeout(function () {
-      const instruction = document.getElementById("sound-instruction");
-      instruction.classList.add("hide");
-    }, 5000);
+    window.onload = function () {
+      setTimeout(function () {
+        const instruction = document.getElementById("sound-instruction");
+        if (instruction) {
+          instruction.classList.add("hide");
+        }
+      }, 5000);
+    };
   </script>
 </body>
 </html>
